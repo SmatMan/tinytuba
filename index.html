@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tiny Tuba (but better)</title>
+	<style>
+	   .tuba {
+	    position: fixed;
+	    top: 50%;
+	    left: 50%;
+	    /* bring your own prefixes */
+	    transform: translate(-50%, -50%);
+	    cursor: pointer;
+	   }
+	              
+	</style>
+</head>
+<body>
+	<img class="tuba" onclick="play()" src="tuba.jpg"> <audio id="audio" src="tuba.mp3"></audio> 
+	<script>
+	 function play(){
+	      var audio = document.getElementById("audio");
+	      audio.play();
+	                }
+	</script>
+</body>
+</html>
